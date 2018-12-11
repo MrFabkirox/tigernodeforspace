@@ -23,7 +23,7 @@ class ArticleList extends Component {
           {articles.map(({ _id, category,subject,body,source,date,poster,vote }) => (
             <CSSTransition key={_id} timeout={500} classNames="fade">
               <ListGroupItem>
-{_id},{category},{subject},
+{category},{subject},
 {body},{source},{date},{poster},{vote}
               </ListGroupItem>
             </CSSTransition>
