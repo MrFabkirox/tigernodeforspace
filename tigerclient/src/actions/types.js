@@ -1,0 +1,3 @@
+export const GET_ARTICLES = 'GET_ARTICLES'
+export const ADD_ARTICLE = 'ADD_ARTICLE'
+export const ARTICLES_LOADING = 'ARTICLES_LOADING'
