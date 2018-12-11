@@ -8,7 +8,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix tigerclient",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroky-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix tigerclient && npm run build --prefix tigerclient"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix tigerclient && npm run build --prefix tigerclient"
   },
   "author": "Fabrice Esope",
   "license": "MIT",
