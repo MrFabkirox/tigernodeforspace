@@ -47,6 +47,14 @@ mongoose.connect(
 
 mongoose.Promise = global.Promise;
 
+// // mongodb for docker
+// mongoose.connect(
+//   'mongodb://mongo:27017/tigernodeforspace',
+//   { useNewUrlParser: true }
+// )
+// .then(() => console.log('Mongodb connected'))
+// .catch(err => console.log(err))
+
 // Use Routes
 app.use('/api/articles', articles)
 
