@@ -20,6 +20,9 @@ class App extends Component {
   
             <AppNavbar />
 
+            <h3>Let's share some interesting articles</h3>
+            <br />
+
             <Container>
               <ArticleList />
               <ArticleModal />
