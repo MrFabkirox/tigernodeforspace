@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+
 import AppNavbar from './components/AppNavbar'
-import ArticleList from './components/ArticleList'
-import ArticleModal from './components/ArticleModal'
+
+import Articles from './components/Articles/Articles'
+import Home from './components/Home'
+
+import { BrowserRouter, Route } from 'react-router-dom';
+
 import { Container } from 'reactstrap'
 
 import { Provider } from 'react-redux'
@@ -20,12 +25,15 @@ class App extends Component {
   
             <AppNavbar />
 
-            <h3>Let's share some interesting articles</h3>
-            <br />
-
             <Container>
-              <ArticleList />
-              <ArticleModal />
+
+            <BrowserRouter>
+              <div>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/Articles" component={Articles} />
+              </div>
+            </BrowserRouter>
+
             </Container>
   
             <img src={logo} className="App-logo" alt="logo" />

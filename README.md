@@ -10,7 +10,7 @@ npm i
 Run app:
 npm run dev
 
-Run test:
+Run test(in server or client folder):
 npm run test
 
 Docker cli:

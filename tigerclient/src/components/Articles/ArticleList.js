@@ -3,7 +3,7 @@ import { Container, ListGroup, ListGroupItem } from 'reactstrap'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import { connect } from 'react-redux'
-import { getArticles } from '../actions/articleActions'
+import { getArticles } from '../../actions/articleActions'
 import PropTypes from 'prop-types'
 
 class ArticleList extends Component {
@@ -23,8 +23,15 @@ class ArticleList extends Component {
           {articles.map(({ _id, category,subject,body,source,date,poster,vote }) => (
             <CSSTransition key={_id} timeout={500} classNames="fade">
               <ListGroupItem>
-{category},{subject},
-{body},{source},{date},{poster},{vote}
+                
+                <h3>{category}, {subject},</h3>
+                
+                <p>{body}</p> 
+                
+                <p>{source}</p>
+                
+                <p>{date},{poster},{vote}</p>
+              
               </ListGroupItem>
             </CSSTransition>
           ))}
