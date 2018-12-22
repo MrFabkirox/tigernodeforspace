@@ -19,7 +19,7 @@ const Home = () => {
       I will moderate afterward if it really needs to, to avoid spam or else, but i would rather let it open, and see how it goes first.
       </p>
 
-      <p>If you need there is any legal issue or any type of issue at all, or if you just want to contact me for any reason, don't hesitate to reach out to me through LinkedIn. I will be happy to answer any kind of feedback or suggestion.</p>
+      <p>If you need to reach me for any type of issue at all, or if you just want to contact me for any reason, don't hesitate to reach out to me through LinkedIn. I will be happy to answer any kind of feedback or suggestion.</p>
 
     </div>
       );

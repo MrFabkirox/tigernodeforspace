@@ -14,12 +14,14 @@ class Articles extends Component {
     return (
       <Provider store={store}>
 
-            <h3>Let's share some interesting articles from inside article</h3>
+            <p>We can not know anything for certain, but sharing, oberving, questionning will enrich us all.</p>
+            
+            <h3>Please, share anything you feel like.</h3>
             <br />
 
             <Container>
-              <ArticleList />
               <ArticleModal />
+              <ArticleList />
             </Container>
   
       </Provider>

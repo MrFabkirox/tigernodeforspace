@@ -6,6 +6,8 @@ import { connect } from 'react-redux'
 import { getArticles } from '../../actions/articleActions'
 import PropTypes from 'prop-types'
 
+import { NavLink } from 'react-router-dom'
+
 class ArticleList extends Component {
 
   componentDidMount() {
@@ -24,13 +26,18 @@ class ArticleList extends Component {
             <CSSTransition key={_id} timeout={500} classNames="fade">
               <ListGroupItem>
                 
-                <h3>{category}, {subject},</h3>
+                {category},
+                <h3>{subject}</h3>
                 
                 <p>{body}</p> 
                 
+                <NavLink to="/faq" activeClassName="selected">
+                  {source}
+                </NavLink>
+
                 <p>{source}</p>
                 
-                <p>{date},{poster},{vote}</p>
+                <p>{date},{poster}</p>
               
               </ListGroupItem>
             </CSSTransition>
