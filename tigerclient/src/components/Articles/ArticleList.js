@@ -18,6 +18,7 @@ class ArticleList extends Component {
     
     const { articles } = this.props.article
     return(
+
       <Container>
 
         <ListGroup>
@@ -31,12 +32,10 @@ class ArticleList extends Component {
                 
                 <p>{body}</p> 
                 
-                <NavLink to="/faq" activeClassName="selected">
+                <NavLink to={source} activeClassName="selected" style= {{ 'font-size': 'calc(2px + 2vmin)' }}>
                   {source}
                 </NavLink>
 
-                <p>{source}</p>
-                
                 <p>{date},{poster}</p>
               
               </ListGroupItem>

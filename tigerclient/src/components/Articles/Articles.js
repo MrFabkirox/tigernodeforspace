@@ -14,7 +14,9 @@ class Articles extends Component {
     return (
       <Provider store={store}>
 
-            <p>We can not know anything for certain, but sharing, oberving, questionning will enrich us all.</p>
+            <p style={{ 'text-align': 'center' }}>
+              We can not know anything for certain, but sharing, oberving, questionning will enrich us all.
+            </p>
             
             <h3>Please, share anything you feel like.</h3>
             <br />
