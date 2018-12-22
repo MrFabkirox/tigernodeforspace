@@ -89,7 +89,7 @@ class ArticleModal extends Component {
                 />
 
                 <Input
-                  type="text"
+                  type="textarea"
                   name="body"
                   id="body"
                   placeholder="add body"
@@ -117,14 +117,6 @@ class ArticleModal extends Component {
                   name="poster"
                   id="poster"
                   placeholder="add poster"
-                  onChange={this.onChange}
-                />
-
-                <Input
-                  type="text"
-                  name="vote"
-                  id="vote"
-                  placeholder="add vote"
                   onChange={this.onChange}
                 />
 
