@@ -10,7 +10,7 @@ const Home = () => {
 
       <img id='fabpix' src={ fabpix } alt={"Fabrice Esope"} />
      
-      <p>This place is my opportunity to practive and implement some js programming, and to build whatever i can manage to put toghether.</p>
+      <p>This place is my opportunity to practice and implement some js programming, and to build whatever i can manage to put toghether.</p>
 
       <p id='centered'>________________________</p>
 

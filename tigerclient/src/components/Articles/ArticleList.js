@@ -15,7 +15,7 @@ class ArticleList extends Component {
   }
 
   render() {
-    
+
     const { articles } = this.props.article
     return(
 
@@ -36,7 +36,7 @@ class ArticleList extends Component {
                   {source}
                 </NavLink>
 
-                <p>{date},{poster}</p>
+                <p>{date = new Date().toISOString().replace('T', ' ').substr(0, 16)}, {poster}</p>
               
               </ListGroupItem>
             </CSSTransition>
